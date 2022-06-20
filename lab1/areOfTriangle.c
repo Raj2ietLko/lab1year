@@ -7,5 +7,5 @@ int main(){
     scanf("%f %f %f",&a,&b,&c);
     float s=(a+b+c)/2;
     float area=pow(s*(s-a)*(s-b)*(s-c),.5);
-    printf("%.3f is area of given circle\n",area);
+    printf("%.3f is area of given triangle\n",area);
 }
