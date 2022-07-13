@@ -2,7 +2,7 @@
 
 int BinDec(int N){
     if(!N)return 0;
-    return (N%10)+BinDec(N/10);
+    return BinDec(N/10)*2 + N%10 ;
 }
 
 

@@ -4,7 +4,8 @@
 
 int DecBin(int N){
     if(!N)return 0;
-    return (N%10)+DecBin(N/10);
+    return DecBin(N>>1)*10+N&1;
+    //return DecBin(N/2)*10 + N%1;  //this line is also same as above
 }
 
 
