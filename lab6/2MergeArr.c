@@ -24,12 +24,7 @@ int main(){    //I have assumed that the order is increasing
         else t=B[j],j<b?j++:0;
         
         int flag=1;
-        for(int i=0;i<k;i++){
-            if(t==C[i]){
-                flag=0;
-                break;
-            }
-        }        
+        if(C[k-1]==t)flag=0;
         if(flag) C[k]=t,k++;
     }
     for(int i=0;i<k;i++)printf("%d ",C[i]);
