@@ -19,11 +19,11 @@ int main(){
     scanf("%d",&n);
     struct Hotel tajG[n],temp;
     for(int i=1;i<=n;i++){
-        printf("enter Name of hotel%d :\n",i);scanf("%s",tajG[i].name);
-        printf("enter address of hotel%d :\n",i);scanf("%s",tajG[i].address);
-        printf("enter grade of hotel%d :\n",i);scanf("%d",&tajG[i].grade);
-        printf("enter charge of hotel%d :\n",i);scanf("%f",&tajG[i].roomCharge);
-        printf("enter room count of hotel%d :\n",i);scanf("%d",&tajG[i].roomCount);
+        printf("enter Name of hotel%d :\n",i);scanf("%s",tajG[i-1].name);
+        printf("enter address of hotel%d :\n",i);scanf("%s",tajG[i-1].address);
+        printf("enter grade of hotel%d :\n",i);scanf("%d",&tajG[i-1].grade);
+        printf("enter charge of hotel%d :\n",i);scanf("%f",&tajG[i-1].roomCharge);
+        printf("enter room count of hotel%d :\n",i);scanf("%d",&tajG[i-1].roomCount);
         printf("\n\n");
     }
     for(int i=0;i<n-1;i++)
