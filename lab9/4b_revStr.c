@@ -12,8 +12,8 @@ int main(){
     string=(char *)malloc(n*sizeof(char));
     scanf("%s",string);
     for(int i=0;i<n/2;i++){
-        t=string[i];
-        string[i]=string[n-i-1];string[n-i-1]=t;
+        t=*(string+i);
+        *(string+i)=*(string+n-i-1);*(string+n-i-1)=t;
     }
     printf("%s",string);
 }
